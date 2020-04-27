@@ -1,0 +1,46 @@
+@import "../variables";
+
+.ngm-course-page-content {
+  background: @lightGrayBg;
+  padding: 25px 20px
+}
+
+.ngm-course-page-add-course {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.ngm-course-page-add-course-button {
+  font-family: @fontFamily;
+  font-size: 14px;
+  background: @darkSkyBlue;
+  color: #fff;
+  padding: 8px 16px 8px 40px;
+  line-height: 20px;
+  border-radius: 3px;
+  border: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    margin-top:-1px;
+    height: 2px;
+    width: 18px;
+    background: #FFFFFF;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 9px;
+    width: 2px;
+    height: 18px;
+    background: #FFFFFF;
+  }
+}

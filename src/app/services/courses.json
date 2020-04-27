@@ -1,0 +1,23 @@
+[
+  {
+  "id": "id1",
+  "title": "Video Course 1. Name tag",
+  "date": 1587994782869,
+  "duration": 121,
+  "description": "Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Course descriptions report information about a university or college's classes. They're published both in course catalogs that outline degree requirements and in course schedules that contain descriptions for all courses offered during a particular semester."
+  },
+  {
+  "id": "id2",
+  "title": "Video Course 2. Name tag",
+  "date": 1587994382869,
+  "duration": 92,
+  "description": "Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Course descriptions report information about a university or college's classes. They're published both in course catalogs that outline degree requirements and in course schedules that contain descriptions for all courses offered during a particular semester."
+  },
+  {
+  "id": "id3",
+  "title": "Video Course 3. Name tag",
+  "date": 1587494782869,
+  "duration": 58,
+  "description": "Learn about where you can find course descriptions, what information they include, how they work, and details about various components of a course description. Course descriptions report information about a university or college's classes. They're published both in course catalogs that outline degree requirements and in course schedules that contain descriptions for all courses offered during a particular semester."
+  }
+]
