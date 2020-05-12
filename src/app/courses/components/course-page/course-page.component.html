@@ -1,0 +1,11 @@
+<app-search-block (onSearch)="onSearch($event)"></app-search-block>
+<div class="ngm-course-page-add-course">
+  <button class="ngm-course-page-add-course-button">Add course</button>
+</div>
+<div class="ngm-course-page-list">
+  <app-course-list
+    [onDelete]="onDelete"
+    [list]="list | filterByName: searchQuery | orderBy : 'desc' : 'date'"
+  ></app-course-list>
+</div>
+

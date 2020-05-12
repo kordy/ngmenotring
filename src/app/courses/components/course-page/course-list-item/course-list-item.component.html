@@ -1,0 +1,38 @@
+<div
+  [highlightByDate]="item.date"
+  [ngClass]="{isTopRated:item.topRated}"
+  class="ngm-course-list-item-container"
+>
+  <div class="ngm-course-list-item">
+    <div class="ngm-course-list-item-info">
+      <div class="ngm-course-list-item-top">
+        <div class="ngm-course-list-item-title">
+          {{ item.title | uppercase }}
+          <span *ngIf="item.topRated" class="ngm-course-list-item-top-rated-icon">&#9733;</span>
+        </div>
+        <div class="ngm-course-list-item-time">
+          <div class="ngm-course-list-item-time-item ngm-course-list-item-duration">
+            <fa-icon class="ngm-course-list-item-time-icon" [icon]="icons.faClock"></fa-icon>
+            {{ item.duration | duration }}
+          </div>
+          <div class="ngm-course-list-item-time-item ngm-course-list-item-date">
+            <fa-icon class="ngm-course-list-item-time-icon" [icon]="icons.faCalendarAlt"></fa-icon>
+            {{ item.date | date: 'd MMM, yyyy'}}
+          </div>
+        </div>
+      </div>
+      <div class="ngm-course-list-item-description">
+        {{ item.description }}
+      </div>
+    </div>
+    <div class="ngm-course-list-item-controls">
+      <a [routerLink]="getFullLink()" class="ngm-course-list-item-control">
+        <fa-icon class="ngm-course-list-item-control-icon" [icon]="icons.faPen"></fa-icon>
+        Edit</a>
+      <button class="ngm-course-list-item-control" (click)="onClickDelete()">
+        <fa-icon class="ngm-course-list-item-control-icon" [icon]="icons.faTrash"></fa-icon>
+        Delete
+      </button>
+    </div>
+  </div>
+</div>

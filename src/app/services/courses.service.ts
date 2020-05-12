@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { CourseListType } from "../core/СourseListTypes";
+
 import courses from './courses.json';
+import {CourseListType} from "../courses/СourseListTypes";
 
 @Injectable({
   providedIn: 'root'
