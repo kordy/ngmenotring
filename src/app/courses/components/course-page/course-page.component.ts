@@ -9,8 +9,8 @@ import {CoursesService} from "../../../services/courses.service";
 })
 export class CoursePageComponent implements OnInit {
 
-  public searchQuery: string = ''
-  public list: CourseListType
+  public searchQuery: string = '';
+  public list: CourseListType;
 
   constructor(private coursesService: CoursesService) { }
 

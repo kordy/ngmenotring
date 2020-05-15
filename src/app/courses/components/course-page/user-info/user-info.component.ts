@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IUser } from "../../../UserTypes";
-import {UserService} from "../../../../services/user.service";
+import {AuthService} from "../../../../services/auth.service";
 
 @Component({
   selector: 'app-user-info',
@@ -12,7 +12,7 @@ export class UserInfoComponent implements OnInit, IUserInfoComponent {
 
   public user: IUser
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: AuthService) { }
 
   ngOnInit(): void {
     this.user = this.userService.getUser();
